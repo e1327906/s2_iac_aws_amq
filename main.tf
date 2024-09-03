@@ -8,11 +8,16 @@ data "aws_vpc" "existing" {
 }
 
 # Data source to get existing subnets in the VPC
-data "aws_subnets" "existing" {
-  filter {
-    name   = "vpc-id"
-    values = [data.aws_vpc.existing.id]
-  }
+#data "aws_subnets" "existing" {
+  #filter {
+    #name   = "vpc-id"
+    #values = [data.aws_vpc.existing.id]
+  #}
+#}
+
+# Data source to get existing subnets in the VPC
+data "aws_vpc_subnets" "existing" {
+  vpc_id = data.aws_vpc.existing.id
 }
 
 # Create a new security group for the MQ broker
