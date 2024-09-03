@@ -5,5 +5,5 @@ output "broker_id" {
 
 output "broker_endpoint" {
   description = "The endpoint of the Amazon MQ broker"
-  value       = aws_mq_broker.example.broker_instances[0].endpoint
+  value       = aws_mq_broker.example.instances[0].endpoints[0]
 }
