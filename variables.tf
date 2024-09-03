@@ -4,15 +4,15 @@ variable "vpc_id" {
   default     = "vpc-0c229f5efeea9aea5"
 }
 
-variable "subnet_ids" {
-  description = "List of subnet IDs in the VPC"
-  type        = list(string)
-}
+#variable "subnet_ids" {
+  #description = "List of subnet IDs in the VPC"
+  #type        = list(string)
+#}
 
-variable "security_group_id" {
-  description = "The ID of the existing security group"
-  type        = string
-}
+#variable "security_group_id" {
+  #description = "The ID of the existing security group"
+  #type        = string
+#}
 
 variable "broker_name" {
   description = "The name of the Amazon MQ broker"
