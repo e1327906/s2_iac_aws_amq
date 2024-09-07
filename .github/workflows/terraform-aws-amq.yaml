@@ -3,7 +3,7 @@ name: Terraform AWS AMQ Deployment
 on:
   push:
     branches:
-      - main # Adjust this to the branch you want to trigger the workflow
+      - main #  Adjust this to the branch you want to trigger the workflow
 
 jobs:
   terraform:
