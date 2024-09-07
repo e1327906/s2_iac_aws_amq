@@ -23,7 +23,7 @@ variable "broker_name" {
 variable "engine_version" {
   description = "The version of the ActiveMQ engine"
   type        = string
-  default     = "5.18"
+  default     = "5.17"
 }
 
 variable "instance_type" {
