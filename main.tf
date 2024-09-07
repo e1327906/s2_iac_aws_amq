@@ -60,7 +60,7 @@ resource "aws_mq_broker" "example" {
   host_instance_type   = var.instance_type
   security_groups      = [aws_security_group.mq_security_group.id]  
   subnet_ids           = [data.aws_subnets.existing.ids[0]]
-  publicly_accessible  = false  # Set to false to make it accessible only within the VPC
+  publicly_accessible  = true  # Set to false to make it accessible only within the VPC
   deployment_mode      = "SINGLE_INSTANCE" # Set to SINGLE_INSTANCE for single instance deployment
   authentication_strategy = "SIMPLE"
   
