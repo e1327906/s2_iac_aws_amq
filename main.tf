@@ -41,8 +41,8 @@ resource "aws_security_group" "mq_security_group" {
   }
   
   ingress {
-    from_port   = 8161 # Web admin console port
-    to_port     = 8161
+    from_port   = 8162 # Web admin console port
+    to_port     = 8162
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
