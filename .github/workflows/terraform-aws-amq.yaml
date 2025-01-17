@@ -1,4 +1,4 @@
-name: Terraform AWS AMQ Deployment
+name: Terraform AWS AMQ Deployment 
 
 on:
   push:
