@@ -63,6 +63,7 @@ resource "aws_mq_broker" "example" {
   publicly_accessible  = true  # Set to false to make it accessible only within the VPC
   deployment_mode      = "SINGLE_INSTANCE" # Set to SINGLE_INSTANCE for single instance deployment
   authentication_strategy = "SIMPLE"
+  auto_minor_version_upgrade = true  # Ensure this is set to true
   
   maintenance_window_start_time {
     day_of_week = var.maintenance_day
